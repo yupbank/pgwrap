@@ -63,7 +63,8 @@ def columns(columns):
     else:
         return '*'
 
-def on((t1,t2),on):
+def on(t, on):
+    t1, t2 = t
     if on:
         return "%s = %s" % on
     else:

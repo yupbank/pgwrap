@@ -7,7 +7,7 @@ except ImportError:
 
 version = "0.7"
 description = 'Simple PostgreSQL database wrapper - provides wrapper over psycopg2 supporting a Python API for common sql functions'
-long_description = file("README").read()
+long_description = open("README").read()
 
 class GenerateReadme(Command):
     description = "Generates README file"
